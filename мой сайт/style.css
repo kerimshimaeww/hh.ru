@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+  }
+  
+.html{
+  scroll-behavior: smooth;
+}
+  
+  header {
+    padding: 20px;
+    background-color: #000000a3;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .intro {
+    font-size: 50px;
+    background-image: url(./assets/intro-img.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(30, 16, 16);
+   ;
+    
+  }
+  
+  .intro h1 {
+    text-align: center;
+    height: -100px;
+    margin: 0;
+    font-size: 100px;
+  }
+  
+  .intro-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+    width: 100%;
+    margin: 50px auto 0;
+  }
+  
+  .intro-slogan {
+    font-size: 30px;
+    padding-left: 15px;
+    border-left: 5px solid #d9d9d9;
+  }
+  
+  .intro-slogan p {
+    margin: 0;
+    font-size: 42px;
+  }
+  
+  .intro-button {
+    align-self: flex-end;
+  }
+
+  .scrollBtn{
+    display: block;
+    width: 220px;
+    height: 70px;
+    padding: 24px 0;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    border: 2px;
+    transition: all .2s linear;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:  0px 5px 10px ;
+
+   }
+  
+  .scrollBtn:hover {
+    color:black;
+    background: rgba(255, 255, 255, 0.25);
+    background-color: rgba(251, 251, 251, 0.25);
+    border-radius: 25px;
+    font-size: 40px;
+  }  
+  
+  .intro-button button {
+    font-size: 20px;
+    /* border-radius: 10px; */
+    color: #000000;
+    background-color: #d9d9d9;
+    border: 0;
+    padding: 8px 30px;
+    font-size: 32px;
+  }
+  
+  /* Корзина */
+  
+  
+  
+  
+  /* footer */
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 30px;
+    margin-top: 250px;
+  }
+  
+  .contact-number {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 30px;
+    color:#ffffff;
+    height: 40px;
+    width: 40px;
+    padding: auto;
+    gap:100px;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:0 ;
+    padding: 0;
+  }
+  .menu li{
+    list-style-type: none;
+
+  }
+  .menu li a{
+    display: block;
+    width: 170px;
+    padding: 30px;
+    text-align: end;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .2s linear;
+    border-right: 1px solid rgb(60, 58, 58);
+    
+    
+  }
+  .menu li a:hover{
+    background: rgb(60, 58, 58);
+    color:#d9d9d9
+
+  }
+  .menu li:first-child{
+    border-left:1px solid rgb(60, 58, 58);
+  }
+  .aple{
+    color:black;
+    font-size: 30px;
+    display: flex;
+    border: #000000;
+  }
+  .bat1{
+    display: block;
+    width: 160px;
+    height: 40px;
+    padding: 24px 0;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    border: 40px;
+    transition: all .2s linear;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-color: #000000;
+    box-shadow: 0px  5px 10px 5px #000000;
+
+    
+  }
+  .bat1:hover{
+    color:black;
+    background: rgba(255, 255, 255, 0.25);
+    background-color: rgba(11, 7, 98, 0.25);
+    border-radius: 25px;
+    font-size: 27px;
+  }
+  .wrapper{
+    display: flex;
+    border:2px solid #000000;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap:20px;
+  }
+
+  .vacancCard{
+    display: flex;
+   
+    flex-direction:column;
+    border: 2px solid #000000;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 50px;
+    gap:20px;
+    box-shadow: 10px 10px 10px #000000;  
+  }
+
+  .vacancCard:hover {
+    color:black;
+    background: rgba(255, 255, 255, 0.25);
+    background-color: rgba(121, 121, 128, 0.25);
+    transition: 0.5s;
+    transform: translateY(-10px);
+
+  }
+
+
+
+  .search-form{
+    border:1px solid black;
+    display: inline-flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 550px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-right: 10px;
+    background-color: #ffffff;
+  }
+
+  .search-form_text{
+    border:none;
+    width: 200px;
+    outline:none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #000000;
+
+  }
+
+  .search-form_btn{
+    border:none;
+    background-color: transparent;
+  }
+
+  .search-form_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+  }
